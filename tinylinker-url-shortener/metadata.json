@@ -1,0 +1,5 @@
+{
+  "name": "TinyLinker - URL Shortener",
+  "description": "A React application for shortening URLs, tracking clicks, and managing target sources, designed to interact with a TinyURL-like backend service.",
+  "requestFramePermissions": []
+}
