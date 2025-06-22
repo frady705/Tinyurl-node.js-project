@@ -39,9 +39,13 @@ app.get('/:id', async (req, res) => {
   }
 });
 
+
+
 // MongoDB connect & start server
 const PORT = process.env.PORT || 3000;
 const MONGO_URI = process.env.MONGODB_URI;
+console.log('🔍 MONGODB_URI:', MONGO_URI); // שורת בדיקה
+
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
