@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 
 import { User, Link, CreateLinkDto, UpdateLinkTargetsDto } from '../types';
 
