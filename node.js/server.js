@@ -12,6 +12,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Default route for health check
+app.get('/', (req, res) => {
+  res.send('TinyURL API is running...');
+});
+
 // Routers
 app.use('/api/users', userRoutes);
 app.use('/api/links', linkRoutes);
