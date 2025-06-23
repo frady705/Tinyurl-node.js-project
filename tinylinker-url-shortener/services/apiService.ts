@@ -1,8 +1,8 @@
 
 import { User, Link, CreateLinkDto, UpdateLinkTargetsDto } from '../types';
 
-const API_BASE_URL = 'http://localhost:3000/api';
-const SERVER_ROOT_URL = 'http://localhost:3000'; // For direct redirection links
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api';
+const SERVER_ROOT_URL = import.meta.env.VITE_SERVER_ROOT_URL || 'http://localhost:3000'; // For direct redirection links
 
 // Helper function to handle fetch responses
 const handleResponse = async (response: Response) => {
