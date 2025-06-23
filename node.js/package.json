@@ -4,7 +4,6 @@
   "description": "TinyUrl Service - Node.js + Express + MongoDB",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
     "dev": "nodemon server.js"
   },
   "keywords": ["tinyurl", "url-shortener", "express", "mongodb"],
